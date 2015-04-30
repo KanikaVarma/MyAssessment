@@ -22,6 +22,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
     
+    //ViewController1 added as a rootviewcontroller on navigationcontroller
     ViewController1* viewController1=[[ViewController1 alloc] init];
     navigationController=[[UINavigationController alloc] initWithRootViewController:viewController1];
     self.window.rootViewController=navigationController;

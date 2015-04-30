@@ -46,6 +46,7 @@
     // Do any additional setup after loading the view.
     [self initViews];
     
+    //customized back button to handle action
     UIBarButtonItem* backButton=[[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleDone target:self action:@selector(handleBack:)];
     self.navigationItem.leftBarButtonItem = backButton;
 }

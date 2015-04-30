@@ -11,6 +11,7 @@
 static NSString *CellIdentifier = @"CellIdentifier";
 
 #define dateFormat @"dd MMMM yyyy"
+#define numberOfRows 12
 
 ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
@@ -24,7 +25,7 @@ static NSString *CellIdentifier = @"CellIdentifier";
 ///////////////////////////////////////////////////////////////
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
     self.tableView=[[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -49,7 +50,7 @@ static NSString *CellIdentifier = @"CellIdentifier";
 
 ///////////////////////////////////////////////////////////////
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 12;
+    return numberOfRows;
 }
 
 ///////////////////////////////////////////////////////////////
